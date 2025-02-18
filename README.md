@@ -11,7 +11,7 @@ The scene should include:
 Steps
 - These are the Steps this project has to follow
 
-    1.Set Up Your HTML File
+    1. Set Up Your HTML File
         * Create an HTML file and set up the basic structure:
             - Include a <canvas> element with an ID.
             - Link a JavaScript file.
@@ -37,6 +37,6 @@ Steps
     5. Add Text to the Canvas
 
         * Draw text displaying your name and the picture title on the canvas:
-          > Use the font property to set the font style and size.
-          > Use the fillStyle property to set the text color.
-          > Use the fillText method to draw the text on the canvas.
+          - Use the font property to set the font style and size.
+          - Use the fillStyle property to set the text color.
+          - Use the fillText method to draw the text on the canvas.
