@@ -1,15 +1,17 @@
 # SceneDrawing
-Object
+
+OBJECT 
 
 Create a visually appealing scene using the HTML &lt;canvas> element. 
 
 The scene should include:  
+
 * A background image
 * At least two foreground images
-*  Text displaying your name and the scene title
+* Text displaying your name and the scene title
   
-Steps
-- These are the Steps this project has to follow
+STEPS 
+- These are the steps that need to be completed for this project
 
     1. Set Up Your HTML File
         * Create an HTML file and set up the basic structure:
