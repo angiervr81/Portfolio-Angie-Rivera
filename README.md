@@ -1,6 +1,8 @@
 # SceneDrawing
 Object
+
 Create a visually appealing scene using the HTML &lt;canvas> element. 
+
 The scene should include:  
 * A background image
 * At least two foreground images
@@ -8,21 +10,22 @@ The scene should include:
   
 Steps
 - These are the Steps this project has to follow
-      1.Set Up Your HTML File
+
+    1.Set Up Your HTML File
         * Create an HTML file and set up the basic structure:
-            > Include a <canvas> element with an ID.
-            > Link a JavaScript file.
+            - Include a <canvas> element with an ID.
+            - Link a JavaScript file.
 
     2. Prepare Your JavaScript File
           * Create a JavaScript file to initialize your canvas and context:
-              > Use getElementById to get the canvas element.
-              > Use getContext('2d') to get the canvas context.
+              - Use getElementById to get the canvas element.
+              - Use getContext('2d') to get the canvas context.
 
     3. Load and Draw the Background Image
          * Load a background image and draw it on the canvas:
-             > Create an Image object.
-             > Set the src attribute to the path of your background image within the images subfolder.
-             > Use the onload event to draw the image on the canvas.
+             - Create an Image object.
+             - Set the src attribute to the path of your background image within the images subfolder.
+             - Use the onload event to draw the image on the canvas.
 
     4. Load and Draw Foreground Images
           * Find at least two images you want to use in front of your background.
