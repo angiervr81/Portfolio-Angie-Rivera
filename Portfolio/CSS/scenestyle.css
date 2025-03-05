@@ -1,14 +1,15 @@
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
   }
-  
+
+
   canvas {
-    border: 2px solid black;
+    border: 2px white;
+    border-style: lightblue;
+    
   }
   
