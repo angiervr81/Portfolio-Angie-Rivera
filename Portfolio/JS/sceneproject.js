@@ -5,14 +5,15 @@ const ctx = canvas.getContext('2d');
 
 //Loading the background image
 const background = new Image();
-background.src = 'images/sea-water-ocean-wave-inside-view-generative-ai-free-photo.jpg';
+background.src = 'images/landscape.jpg';
 
 
-//Loading foreground images
+/*Loading foreground images
 const foreground = new Image();
 const foreground2 = new Image();
-foreground.src = 'images/surfer.png';
+foreground.src = 'images/surfer2.jpg';
 foreground2.src = 'images/dolphin.jpg';
+*/
 
 // Resize canvas to fit the window
 
@@ -21,24 +22,25 @@ foreground2.src = 'images/dolphin.jpg';
 background.onload =() =>{
     ctx.drawImage(background, 0, 150, canvas.width, canvas.height - 150);
 };
-
+/*
 foreground.onload =() =>{
-    const foregroundWidth = 200;
+    const foregroundWidth = 150;
     const foregroundHeight = (foreground.height / foreground.width) * foregroundWidth;
     const foregroundX = (canvas.width - foregroundWidth)/2;
     const foregroundY = (canvas.height - foregroundHeight)/2;
 
     ctx.drawImage(foreground, foregroundX, foregroundY, foregroundWidth, foregroundHeight);
 };
+/*
 foreground2.onload =() =>{
-    const foreground2Width = 250;
-    const foreground2Height = (foreground2.height / foreground2.width) * foregroundWidth;
+    const foreground2Width = 300;
+    const foreground2Height = (foreground2.height / foreground2.width) * foreground2Width;
     const foreground2X = (canvas.width - foreground2Width)/2;
     const foreground2Y = (canvas.height - foreground2Height)/2;
 
     ctx.drawImage(foreground2, foreground2X, foreground2Y, foreground2Width, foreground2Height);
 };
-
+**/
 
 window.onload = function() {
     
