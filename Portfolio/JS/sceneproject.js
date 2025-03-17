@@ -5,13 +5,12 @@ const ctx = canvas.getContext('2d');
 
 //Loading the background image
 const background = new Image();
-background.src = 'images/BFSCENE.jpg';
+background.src = 'images/sea-water-ocean-wave-inside-view0generative-ai-free-photo.jpg';
 
 
 /*Loading foreground images
 const foreground = new Image();
-const foreground2 = new Image();
-foreground.src = 'images/surfer2.jpg';
+const foreground2 = new Image(); 
 foreground2.src = 'images/dolphin.jpg';
 */
 
@@ -63,13 +62,16 @@ window.onload = function() {
     ctx.fillText(text2, x2, y2);
     }
 
+    background.onload =() =>{
+        drawCanvas();
+    };
 // Resize canvas to fit the window
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
     // Redraw the background image and text after resizing
-    background.onload();  // Re-trigger image loading and redraw process
+    drawCanvas();  // Re-trigger image loading and redraw process
 });
 
 // Initially set the canvas size
