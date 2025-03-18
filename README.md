@@ -14,9 +14,9 @@ Behind every creative project, there’s a little bit of code that powers it all
 Take a look at my code, and feel free to reach out if you want to learn more or even get some advice for your own projects!
 
 About Me 👩‍💻
-I’m Angie—an artist, a coder, and a dreamer. I’ve always believed in the power of creativity to spark change, whether it’s through a line of code or a piece of art. With a background in both technology and design, I bring a unique perspective to everything I do. I’m constantly learning, evolving, and finding new ways to blend art and technology to create something extraordinary.
+I’m Angie—a full stack developer. I’ve always believed in the power of creativity to spark change through a line of code . With a background in both technology and UI/UX design. I bring a unique perspective to everything I do. I’m constantly learning, evolving, and finding new ways to blend technology to create something extraordinary.
 
-When I’m not coding or creating, you’ll find me exploring new places, experimenting with new ideas, or grabbing coffee with friends. Let’s connect and inspire each other!
+When I’m not coding or creating, you’ll find me exploring new places, experimenting with new ideas, or listening to muusic. Let’s connect and inspire each other!
 
 Contact 📬
 Got a project in mind? Let’s talk! Whether you’re looking to collaborate, ask a question, or just say hi, I’d love to hear from you. Drop me a message, and let's make something amazing together.
