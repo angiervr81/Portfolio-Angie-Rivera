@@ -1,4 +1,4 @@
-#Welcome to Angie Rivera’s World!
+# Welcome to Angie Rivera’s World!
 🎉 Discover. Create. Connect. 🎉
 
 Welcome to my corner of the internet! I'm Angie Rivera, and this space is where my creativity, passion, and code come to life. Here, you'll find a blend of multimedia projects, technical expertise, personal insights, and ways to reach out if you'd like to collaborate or chat. Dive into each section below to explore what I do, who I am, and how we can work together!
