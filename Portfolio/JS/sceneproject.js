@@ -1,82 +1,41 @@
 
 // Get the canvas element and its context
-const canvas = document.getElementById('myCanvas');
+const canvas = document.getElementById('sceneCanvas');
 const ctx = canvas.getContext('2d');
 
-//Loading the background image
+// Load the background image
 const background = new Image();
-background.src = 'images/sea-water-ocean-wave-inside-view0generative-ai-free-photo.jpg';
+background.src = 'images/seaWaterOcean.jpg'; // Ensure correct path to your image
 
+// Load foreground images
+const foreground1 = new Image();
+foreground1.src ='images/dogsurfer.jpg'; // Path to your first foreground image
 
-/*Loading foreground images
-const foreground = new Image();
-const foreground2 = new Image(); 
-foreground2.src = 'images/dolphin.jpg';
-*/
+const foreground2 = new Image();
+foreground2.src = 'images/dolphin.jpg'; // Path to your second foreground image
 
-// Resize canvas to fit the window
+// Draw the background and images once they're loaded
+background.onload = function() {
+    // Draw the background
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-
-//Draw everything once images are loaded
-background.onload =() =>{
-    ctx.drawImage(background, 0, 150, canvas.width, canvas.height - 150);
-};
-/*
-foreground.onload =() =>{
-    const foregroundWidth = 150;
-    const foregroundHeight = (foreground.height / foreground.width) * foregroundWidth;
-    const foregroundX = (canvas.width - foregroundWidth)/2;
-    const foregroundY = (canvas.height - foregroundHeight)/2;
-
-    ctx.drawImage(foreground, foregroundX, foregroundY, foregroundWidth, foregroundHeight);
-};
-/*
-foreground2.onload =() =>{
-    const foreground2Width = 300;
-    const foreground2Height = (foreground2.height / foreground2.width) * foreground2Width;
-    const foreground2X = (canvas.width - foreground2Width)/2;
-    const foreground2Y = (canvas.height - foreground2Height)/2;
-
-    ctx.drawImage(foreground2, foreground2X, foreground2Y, foreground2Width, foreground2Height);
-};
-**/
-
-window.onload = function() {
-    
-    ctx.fillStyle = 'black'; // Set color 
-    ctx.font = '60px cursive'; // Set font size and style
-    
-    var text1 ='Angie Rivera'; // Draw text
-    var text2 = 'Scence Assignment';
-
-    var textWidth1 = ctx.measureText(text1).width;
-    var textWidth2 = ctx.measureText(text2).width;
-
-    var x1 = (canvas.width - textWidth1) / 2;
-    var x2 = (canvas.width - textWidth2) / 2;
-
-    var y1 = canvas.height / 2 - 385;
-    var y2 = canvas.height / 2 - 325;
-
-    ctx.fillText(text1, x1, y1);
-    ctx.fillText(text2, x2, y2);
-    }
-
-    background.onload =() =>{
-        drawCanvas();
+    // Once background is drawn, load and draw foreground images
+    foreground1.onload = function() {
+        // Draw the first foreground image
+        ctx.globalCompositeOperation = 'multiply'; // Set composite operation for blending
+        ctx.drawImage(foreground1, 300, 275, 200, 200); // Modify positioning and size as needed
     };
-// Resize canvas to fit the window
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
 
-    // Redraw the background image and text after resizing
-    drawCanvas();  // Re-trigger image loading and redraw process
-});
+    foreground2.onload = function() {
+        // Draw the second foreground image
+        ctx.globalCompositeOperation = 'multiply'; // Set composite operation for blending
+        ctx.drawImage(foreground2, 500, 200, 150, 150); // Modify positioning and size as needed
+    };
 
-// Initially set the canvas size
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-
-
+    ctx.globalCompositeOperation = 'source-over';
+    // Draw text after all images are loaded
+    ctx.font = '30px Arial'; // Set the font size and style
+    ctx.fillStyle = 'Forest Green'; // Set the text color
+    ctx.fillText('Angie Rivera', 50, 50); // Display your name at position (50, 50)
+    ctx.fillText('Scene Assignment: CATCHING WAVES', 50, 100); // Display scene title at position (50, 100)
+};
