@@ -1,44 +1,24 @@
-# SceneDrawing
+# Welcome to Angie Rivera’s World!
+🎉 Discover. Create. Connect. 🎉
 
-OBJECT 
+Welcome to my corner of the internet! I'm Angie Rivera, and this space is where my creativity, passion, and code come to life. Here, you'll find a blend of multimedia projects, technical expertise, personal insights, and ways to reach out if you'd like to collaborate or chat. Dive into each section below to explore what I do, who I am, and how we can work together!
 
-Create a visually appealing scene using the HTML &lt;canvas> element. 
+Multimedia Projects 🎬
+From stunning visuals to dynamic videos and everything in between, this is where my creativity comes to life. I believe in the power of storytelling, and my multimedia projects are designed to engage, entertain, and inspire. Whether it’s through video, animation, or interactive media, I pour my heart and soul into crafting content that makes an impact.
 
-The scene should include:  
+Check out my latest creations and see how I bring concepts to life through various forms of media. Ready to collaborate on something exciting? Let’s make magic happen!
 
-* A background image
-* At least two foreground images
-* Text displaying your name and the scene title
-  
-STEPS 
-- These are the steps that need to be completed for this project
+Code 💻
+Behind every creative project, there’s a little bit of code that powers it all. I’m passionate about merging design with functionality. In this section, you’ll find a selection of my projects that demonstrate my coding skills—from web development to application design. I’m always experimenting with new technologies and pushing the boundaries of what’s possible.
 
-    1. Set Up Your HTML File
-        * Create an HTML file and set up the basic structure:
-            - Include a <canvas> element with an ID.
-            - Link a JavaScript file.
+Take a look at my code, and feel free to reach out if you want to learn more or even get some advice for your own projects!
 
-    2. Prepare Your JavaScript File
-          * Create a JavaScript file to initialize your canvas and context:
-              - Use getElementById to get the canvas element.
-              - Use getContext('2d') to get the canvas context.
+About Me 👩‍💻
+I’m Angie—a full stack developer. I’ve always believed in the power of creativity to spark change through a line of code . With a background in both technology and UI/UX design. I bring a unique perspective to everything I do. I’m constantly learning, evolving, and finding new ways to blend technology to create something extraordinary.
 
-    3. Load and Draw the Background Image
-         * Load a background image and draw it on the canvas:
-             - Create an Image object.
-             - Set the src attribute to the path of your background image within the images subfolder.
-             - Use the onload event to draw the image on the canvas.
+When I’m not coding or creating, you’ll find me exploring new places, experimenting with new ideas, or listening to muusic. Let’s connect and inspire each other!
 
-    4. Load and Draw Foreground Images
-          * Find at least two images you want to use in front of your background.
-          * Create Image objects for each of your chosen images.
-          * Set the src attribute to the path where you’ve saved these images in the images subfolder.
-          * Once the images load, use onload to place and draw them on your canvas.
-          * Play around with their positions and sizes to fit them nicely in your scene.
+Contact 📬
+Got a project in mind? Let’s talk! Whether you’re looking to collaborate, ask a question, or just say hi, I’d love to hear from you. Drop me a message, and let's make something amazing together.
 
-    5. Add Text to the Canvas
 
-        * Draw text displaying your name and the picture title on the canvas:
-          - Use the font property to set the font style and size.
-          - Use the fillStyle property to set the text color.
-          - Use the fillText method to draw the text on the canvas.
