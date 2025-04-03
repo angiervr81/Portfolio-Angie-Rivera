@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Form</title>
     <link rel="stylesheet" href="CSS/contentform.css">
+    <style>
+    body {
+        background-image: url('images/travel.jpg'); /* Background image */
+        background-size: cover;
+        background-position: center; /* Centers the image */
+        background-attachment: fixed; /* Fixes the background when scrolling */
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        height: 100vh;
+    }</style>
 </head>
 <body>
     <div class="overlay">
@@ -20,15 +32,20 @@
                 <option value="first">First Class</option>
             </select><br>
 
-            <label for="baggage">Select Baggage Options:</label><br>
-            <input type="checkbox" id="carryOn" value="carryOn"> Carry-On ($25)<br>
-            <input type="checkbox" id="checkedBag" value="checkedBag"> Checked Bag ($50)<br>
+            <label for="baggage1">Carry-On ($25)</label>
+            <input type="checkbox" id="baggage1" value="carryOn" title="Select if you want to add a carry-on bag for $25"><br>
+            
+            <label for="baggage2">Checked Bag ($50)</label>
+            <input type="checkbox" id="baggage2" value="checkBag" title="Select if you want to add a checked bag for $50"><br>
+            
+            <!--discount input-->
+            <label for="discountCode">Discount Code (Optional):</label>
+            <input type="text" id="discountCode" placeholder="Enter discount code"><br>
 
             <button type="button" onclick="calculateFlightCost()">Calculate Total Cost</button>
         </form>
         <h2 id="result"></h2>
     </div>
-    <script src="JS/contentform.js"></script>
-    
+    <script src="JS/contentform.js"></script> 
 </body>
-</html>
+</html
