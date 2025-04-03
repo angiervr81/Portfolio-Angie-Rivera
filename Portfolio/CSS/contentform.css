@@ -1,4 +1,15 @@
 
+body {
+    background-image: url('images/travel.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Fixes the background when scrolling */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+}
 .overlay {
     background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
     padding: 50px;

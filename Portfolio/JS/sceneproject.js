@@ -13,7 +13,7 @@ background.src = 'images/seaWaterOcean.jpg'; // Ensure correct path to your imag
 
 // Load foreground images
 const foreground1 = new Image();
-foreground1.src ='images/dolphin2.jpg'; // Path to your first foreground image
+foreground1.src ='images/birds.jpg'; // Path to your first foreground image
 
 const foreground2 = new Image();
 foreground2.src = 'images/dolphin.jpg'; // Path to your second foreground image
@@ -27,13 +27,13 @@ background.onload = function() {
     foreground1.onload = function() {
         // Draw the first foreground image
         ctx.globalCompositeOperation = 'multiply'; // Set composite operation for blending
-        ctx.drawImage(foreground1, 400, 500, 250, 250); // Modify positioning and size as needed
+        ctx.drawImage(foreground1, 700, 110, 275, 275); // Modify positioning and size as needed
     };
 
     foreground2.onload = function() {
         // Draw the second foreground image
         ctx.globalCompositeOperation = 'multiply'; // Set composite operation for blending
-        ctx.drawImage(foreground2, 600, 375, 250, 250); // Modify positioning and size as needed
+        ctx.drawImage(foreground2, 650, 350, 250, 250); // Modify positioning and size as needed
     };
 
   
@@ -52,8 +52,8 @@ window.addEventListener('resize', function () {
     // Redraw the scene after resizing
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation = 'multiply';
-    ctx.drawImage(foreground1, 400, 500, 250, 250);
-    ctx.drawImage(foreground2, 600, 350, 250, 250);
+    ctx.drawImage(foreground1, 700, 110, 275, 275);
+    ctx.drawImage(foreground2, 650, 350, 250, 250);
     ctx.globalCompositeOperation = 'source-over';
     ctx.fillText('Angie Rivera', 50, 50);
     ctx.fillText('Scene Assignment: CATCHING WAVES', 50, 100);
