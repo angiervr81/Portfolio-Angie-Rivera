@@ -1,4 +1,3 @@
-<a class="text-blue-500 mx-2" href="Protfolio/Welcome.html"> Protfolio </a>>
 # Welcome to Angie Rivera’s World!
 🎉 Discover. Create. Connect. 🎉
 
